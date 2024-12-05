@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark only">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/flatpickr.min.css">
+  <link rel="stylesheet" href="css/tom-select.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__left">
+        <div class="header-menu">
+          <div class="header-menu__container">
+            <nav class="header-nav">
+              <ul class="header-nav__list">
+                <li class="header-nav__item">
+                  <a href="#" class="header-nav__link">
+                    Gallery
+                  </a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#" class="header-nav__link">
+                    Price
+                  </a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#" class="header-nav__link">
+                    Contact
+                  </a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#modal-preorder" data-modal="" class="header-nav__link _active">
+                    Pre-order
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="hader-sc header-menu__sc">
+              <li class="hader-sc__item">
+                <a href="#" target="_blank" class="hader-sc__link">
+                  <svg width="18" height="18" class="hader-sc__icon">
+                    <use href="images/svg-icons.svg#phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hader-sc__item">
+                <a href="#" target="_blank" class="hader-sc__link">
+                  <svg width="18" height="18" class="hader-sc__icon">
+                    <use href="images/svg-icons.svg#wa"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hader-sc__item">
+                <a href="#" target="_blank" class="hader-sc__link">
+                  <svg width="22" height="18" class="hader-sc__icon">
+                    <use href="images/svg-icons.svg#mail"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hader-sc__item">
+                <a href="#" target="_blank" class="hader-sc__link">
+                  <svg width="22" height="18" class="hader-sc__icon">
+                    <use href="images/svg-icons.svg#tg"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="header__logo">
+        <img src="images/logo.png" alt="">
+      </a>
+      <div class="header__right">
+        <div class="header__location">
+          <div class="header-drop">
+            <div class="header-drop__btn">
+              <img src="images/pin.svg" alt="" class="header-drop__icon">
+              <div class="header-drop__value">
+                Phuket
+              </div>
+            </div>
+            <ul class="header-drop__drop">
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Phuket
+                </a>
+              </li>
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Phuket
+                </a>
+              </li>
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Phuket
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__language">
+          <div class="header-drop">
+            <div class="header-drop__btn">
+              <img src="images/glob.svg" alt="" class="header-drop__icon">
+              <div class="header-drop__value">
+                Eng
+              </div>
+            </div>
+            <ul class="header-drop__drop">
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Eng
+                </a>
+              </li>
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Eng
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="hader-sc header__sc">
+          <li class="hader-sc__item">
+            <a href="#" target="_blank" class="hader-sc__link">
+              <svg width="18" height="18" class="hader-sc__icon">
+                <use href="images/svg-icons.svg#phone"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hader-sc__item">
+            <a href="#" target="_blank" class="hader-sc__link">
+              <svg width="18" height="18" class="hader-sc__icon">
+                <use href="images/svg-icons.svg#wa"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hader-sc__item">
+            <a href="#" target="_blank" class="hader-sc__link">
+              <svg width="22" height="18" class="hader-sc__icon">
+                <use href="images/svg-icons.svg#mail"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hader-sc__item">
+            <a href="#" target="_blank" class="hader-sc__link">
+              <svg width="22" height="18" class="hader-sc__icon">
+                <use href="images/svg-icons.svg#tg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="menu-btn header__menu-btn js-toggle-menu-btn">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main class="main">
+      <div class="section section_pt_25 section_pb_120 section-main">
+        <div class="container">
+          <div class="section-main__inner">
+            <div class="admin-message admin-message_mb_45">
+              <div class="admin-message__title">
+                Message from the administrator!
+              </div>
+              <div class="admin-message__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolor
+              </div>
+            </div>
+            <div class="h1 section-main__title">
+              Phuket Escort girls
+            </div>
+            <div class="section-main__text">
+              Top Escort Agency in Phuket. Escorts are our speciality. Here at Top Phuket Escorts, we are an online
+              agency providing you the very best and possibly the most Sexy Escort Girls & Ladyboys from Patong. We also
+              provide sexy escorts in Bangkok and Samui.
+            </div>
+            <div class="section-main__time">
+              <svg width="26" height="26" class="icon icon-gradient">
+                <use href="images/svg-icons.svg#clock"></use>
+              </svg>
+              From 9am to 11pm
+            </div>
+            <div class="section-main__switch">
+              <div class="switch switch_big switch_center section__title-switch">
+                <input type="checkbox" autocomplete="off" name="switch-lb" id="switch-lb"
+                  class="switch-lb switch__input">
+                <div class="switch__label">
+                  girls
+                </div>
+                <label class="switch__btn" for="switch-lb"></label>
+                <div class="switch__label">
+                  ladyboys
+                </div>
+              </div>
+            </div>
+            <div class="main-grid">
+              <div class="sidebar-filter main-grid__sidebar-filter">
+                <div class="sidebar-filter__btn-open js-filter-toggle">
+                  <svg width="21" height="20">
+                    <use href="images/svg-icons.svg#filter"></use>
+                  </svg>
+                  <span>Filters</span>
+                </div>
+                <div class="sidebar-filter__outer js-filter-toggle">
+                  <div class="sidebar-filter__inner">
+                    <div class="sidebar-filter__filter-close js-filter-toggle"></div>
+                    <div class="sidebar-filter__content">
+                      <div class="sidebar-filter__title">
+                        Filters
+                      </div>
+                      <div class="sidebar-filter__row">
+                        <div class="sidebar-filter__label">
+                          Gender
+                        </div>
+                        <div class="sidebar-filter__value">
+                          <select class="select js-select-init js-select-filter" data-default-value="0"
+                            autocomplete="off">
+                            <option value="0" selected>Girls1</option>
+                            <option value="1">Girls2</option>
+                            <option value="2">Girls3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="sidebar-filter__row">
+                        <div class="sidebar-filter__label">
+                          Age
+                        </div>
+                        <div class="sidebar-filter__value">
+                          <select class="select js-select-init js-select-filter" data-default-value="0"
+                            autocomplete="off">
+                            <option value="0" selected>20 - 25 1</option>
+                            <option value="1">20 - 25 2</option>
+                            <option value="2">20 - 25 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="sidebar-filter__row">
+                        <div class="sidebar-filter__label">
+                          Height
+                        </div>
+                        <div class="sidebar-filter__value">
+                          <select class="select js-select-init js-select-filter" data-default-value="0"
+                            autocomplete="off">
+                            <option value="0" selected>170-175 sm1</option>
+                            <option value="1">170-175 sm2</option>
+                            <option value="2">170-175 smy3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="sidebar-filter__row">
+                        <div class="sidebar-filter__label">
+                          Weight
+                        </div>
+                        <div class="sidebar-filter__value">
+                          <select class="select js-select-init js-select-filter" data-default-value="0"
+                            autocomplete="off">
+                            <option value="0" selected>50 kg1</option>
+                            <option value="1">50 kg2</option>
+                            <option value="2">50 kg3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="sidebar-filter__row _lb-hide">
+                        <div class="sidebar-filter__label">
+                          Breast size
+                        </div>
+                        <div class="sidebar-filter__value">
+                          <select class="select js-select-init js-select-filter" data-default-value="0"
+                            autocomplete="off">
+                            <option value="0" selected>31</option>
+                            <option value="1">32</option>
+                            <option value="2">33</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="sidebar-filter__row _lb-show">
+                        <div class="sidebar-filter__label">
+                          Dick or vagina
+                        </div>
+                        <div class="sidebar-filter__value">
+                          <select class="select js-select-init js-select-filter" data-default-value="0"
+                            autocomplete="off">
+                            <option value="0" selected>Dick1</option>
+                            <option value="1">Dick2</option>
+                            <option value="2">Dick3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="sidebar-filter__row _lb-show">
+                        <div class="sidebar-filter__label">
+                          Dick size
+                        </div>
+                        <div class="sidebar-filter__value">
+                          <select class="select js-select-init js-select-filter" data-default-value="0"
+                            autocomplete="off">
+                            <option value="0" selected>16 sm1</option>
+                            <option value="1">16 sm2</option>
+                            <option value="2">16 sm3</option>
+                            <option value="3">16 sm2</option>
+                            <option value="4">16 sm3</option>
+                            <option value="5">16 sm2</option>
+                            <option value="6">16 sm3</option>
+                            <option value="7">16 sm2</option>
+                            <option value="8">16 sm3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="sidebar-filter__control">
+                        <div class="sidebar-filter__row-btn">
+                          <button class="btn btn_w_100p sidebar-filter__bnt-search js-filter-toggle">
+                            Search
+                          </button>
+                        </div>
+                        <div class="sidebar-filter__row-btn">
+                          <button class="btn-text sidebar-filter__btn-clean js-clean-filter">
+                            Clean
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-grid__content">
+                <div class="models-grid">
+                  <a href="#" class="card">
+                    <div class="card__content">
+                      <img src="images/photo/photo1.png" alt="" class="card__img">
+                      <div class="card__name">
+                        FON
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="card">
+                    <div class="card__content">
+                      <img src="images/photo/photo2.png" alt="" class="card__img">
+                      <div class="card__name">
+                        CLAIRE
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="card">
+                    <div class="card__content">
+                      <img src="images/photo/photo3.png" alt="" class="card__img">
+                      <div class="card__name">
+                        COCO
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="card">
+                    <div class="card__content">
+                      <img src="images/photo/photo4.png" alt="" class="card__img">
+                      <div class="card__name">
+                        NANA
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="card">
+                    <div class="card__content">
+                      <img src="images/photo/photo1.png" alt="" class="card__img">
+                      <div class="card__name">
+                        FON
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="card">
+                    <div class="card__content">
+                      <img src="images/photo/photo2.png" alt="" class="card__img">
+                      <div class="card__name">
+                        CLAIRE
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="card">
+                    <div class="card__content">
+                      <img src="images/photo/photo3.png" alt="" class="card__img">
+                      <div class="card__name">
+                        COCO
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="card">
+                    <div class="card__content">
+                      <img src="images/photo/photo4.png" alt="" class="card__img">
+                      <div class="card__name">
+                        NANA
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="card">
+                    <div class="card__content">
+                      <img src="images/photo/photo3.png" alt="" class="card__img">
+                      <div class="card__name">
+                        COCO
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <button class="btn btn_big btn_w_100p btn-more">
+                  VIEW MORE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section_dark section_pt_120 section-prices">
+        <div class="container">
+          <div class="prices">
+            <h2 class="h1 section__title prices__title">
+              Price
+            </h2>
+            <div class="prices__text t-gold">
+              * TOP MODELS EXTRA 500-1000 TBH
+            </div>
+            <div class="border-s pricelist">
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  1 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  2 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  3 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  4 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  6 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  12 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  24 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section_dark section_pt_130 section_pb_100 section-about-us">
+        <div class="container">
+          <div class="about-us">
+            <div class="about-us__left">
+              <h1 class="h1 about-us__title">
+                About us
+              </h1>
+              <div class="about-us__text">
+                <p>
+                  Top Phuket Escorts is a high class escort agency featuring some of the most stunning, beautiful and
+                  friendly women living in Patong, Phuket, Bangkok and Samui. We don't just specialise in finding
+                  outcall
+                  girls for the short- term. We have a range of different booking lengths. We endeavour to meet your
+                  personal requests to find your perfect companion fast. From relaxing dinner dates to overnight escort
+                  services, we have you covered. We have been in operating in Phuket, Bangkok and Samui for many years
+                  now, and have built up a very good reputation for offering the high quality services that we strive
+                  for.
+                  We are available 7 days in week and all of our outcall services are available 24/7. Contact us online
+                  or
+                  call us to get the best escort service in Phuket, Bangkok and Samui.
+                </p>
+              </div>
+              <div class="about-us__btns">
+                <a href="#" class="btn btn_p_40 btn_mobile_w100p">More</a>
+              </div>
+            </div>
+            <div class="about-us__right">
+              <div class="about-us__image">
+                <img src="images/about/about1.webp" alt="">
+              </div>
+              <div class="about-us__image">
+                <img src="images/about/about2.webp" alt="">
+              </div>
+              <div class="about-us__image">
+                <img src="images/about/about3.webp" alt="">
+              </div>
+              <div class="about-us__image">
+                <img src="images/about/about4.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__info">
+        <div class="footer__logo">
+          <img src="images/logo.png" alt="">
+        </div>
+        <div class="footer__term">
+          © 2021 Top Phuket Escorts. All rights reserved.
+        </div>
+      </div>
+      <nav class="footer-cotacts footer__cotacts">
+        <ul class="footer-cotacts__list">
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              Phone
+            </div>
+            <a href="tel:+4547754754" class="footer-cotacts__link">
+              +4 547 754 754
+            </a>
+          </li>
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              Email
+            </div>
+            <a href="mailto:Tophuket@mail.com" class="footer-cotacts__link">
+              Tophuket@mail.com
+            </a>
+          </li>
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              WhatsApp
+            </div>
+            <a href="#" class="footer-cotacts__link">
+              @Tophuket
+            </a>
+          </li>
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              Telegram
+            </div>
+            <a href="#" class="footer-cotacts__link">
+              @Tophuket
+            </a>
+          </li>
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              Line
+            </div>
+            <a href="#" class="footer-cotacts__link">
+              LineLink
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="modal modal-sign" id="modal-preorder">
+  <div class="modal__outer js-modal-hide">
+    <div class="modal__inner modal-preorder__inner">
+      <div class="modal__close js-modal-hide"></div>
+      <div class="modal__title">
+        Pre-order
+      </div>
+      <div class="modal__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </div>
+      <div class="modal__switch">
+        <div class="switch section__title-switch">
+          <input type="checkbox" autocomplete="off" name="switch-lb" id="switch-lb" class="switch-lb switch__input">
+          <div class="switch__label">
+            girls
+          </div>
+          <label class="switch__btn" for="switch-lb"></label>
+          <div class="switch__label">
+            ladyboys
+          </div>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Girl
+        </div>
+        <div class="input-row__input">
+          <select class="select select_model js-select-model" autocomplete="off">
+            <option value="0" data-avatar="images/avatar.png" selected>Jina</option>
+            <option value="1" data-avatar="images/photo/photo2.png">Jina2</option>
+            <option value="2" data-avatar="images/photo/photo3.png">Jina3</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Date
+        </div>
+        <div class="input-date">
+          <div class="input-row__input input-date__date">
+            <input type="text" class="input-style js-preorder-date" placeholder="__ . __ . ____">
+          </div>
+          <div class="input-row__input input-date__time js-preorder-time">
+            <select class="select js-select-init" autocomplete="off">
+              <option value="0" selected>12:00</option>
+              <option value="1">12:30</option>
+              <option value="2">13:00</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Phone number
+        </div>
+        <div class="input-row__input">
+          <input type="text" class="input-style" placeholder="Phone number">
+        </div>
+      </div>
+      <div class="inputs-address modal__row">
+        <div class="input-row inputs-address__address">
+          <div class="input-row__lable">
+            Adress
+          </div>
+          <div class="input-row__input">
+            <input type="text" class="input-style" placeholder="Adress">
+          </div>
+        </div>
+        <div class="input-row inputs-address__room">
+          <div class="input-row__lable">
+            Room
+          </div>
+          <div class="input-row__input">
+            <input type="text" class="input-style" placeholder="№">
+          </div>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Message
+        </div>
+        <div class="input-row__input">
+          <textarea class="input-style input-style_textarea" name="" id="" placeholder="Message"></textarea>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Method of sending
+        </div>
+        <div class="input-row__input">
+          <select class="select js-select-init" autocomplete="off">
+            <option value="0" selected>Email1</option>
+            <option value="1">Email2</option>
+            <option value="2">Email3</option>
+            <option value="3">Email4</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal__btns">
+        <button class="btn btn_w_100p">
+          Send
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="js/flatpickr.js"></script>
+  <script src="js/tom-select.complete.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

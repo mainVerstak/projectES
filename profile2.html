@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" class="_lb">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark only">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/flatpickr.min.css">
+  <link rel="stylesheet" href="css/tom-select.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__left">
+        <div class="header-menu">
+          <div class="header-menu__container">
+            <nav class="header-nav">
+              <ul class="header-nav__list">
+                <li class="header-nav__item">
+                  <a href="#" class="header-nav__link">
+                    Gallery
+                  </a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#" class="header-nav__link">
+                    Price
+                  </a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#" class="header-nav__link">
+                    Contact
+                  </a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#modal-preorder" data-modal="" class="header-nav__link _active">
+                    Pre-order
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="hader-sc header-menu__sc">
+              <li class="hader-sc__item">
+                <a href="#" target="_blank" class="hader-sc__link">
+                  <svg width="18" height="18" class="hader-sc__icon">
+                    <use href="images/svg-icons.svg#phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hader-sc__item">
+                <a href="#" target="_blank" class="hader-sc__link">
+                  <svg width="18" height="18" class="hader-sc__icon">
+                    <use href="images/svg-icons.svg#wa"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hader-sc__item">
+                <a href="#" target="_blank" class="hader-sc__link">
+                  <svg width="22" height="18" class="hader-sc__icon">
+                    <use href="images/svg-icons.svg#mail"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hader-sc__item">
+                <a href="#" target="_blank" class="hader-sc__link">
+                  <svg width="22" height="18" class="hader-sc__icon">
+                    <use href="images/svg-icons.svg#tg"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="header__logo">
+        <img src="images/logo.png" alt="">
+      </a>
+      <div class="header__right">
+        <div class="header__location">
+          <div class="header-drop">
+            <div class="header-drop__btn">
+              <img src="images/pin.svg" alt="" class="header-drop__icon">
+              <div class="header-drop__value">
+                Phuket
+              </div>
+            </div>
+            <ul class="header-drop__drop">
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Phuket
+                </a>
+              </li>
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Phuket
+                </a>
+              </li>
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Phuket
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__language">
+          <div class="header-drop">
+            <div class="header-drop__btn">
+              <img src="images/glob.svg" alt="" class="header-drop__icon">
+              <div class="header-drop__value">
+                Eng
+              </div>
+            </div>
+            <ul class="header-drop__drop">
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Eng
+                </a>
+              </li>
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Eng
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="hader-sc header__sc">
+          <li class="hader-sc__item">
+            <a href="#" target="_blank" class="hader-sc__link">
+              <svg width="18" height="18" class="hader-sc__icon">
+                <use href="images/svg-icons.svg#phone"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hader-sc__item">
+            <a href="#" target="_blank" class="hader-sc__link">
+              <svg width="18" height="18" class="hader-sc__icon">
+                <use href="images/svg-icons.svg#wa"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hader-sc__item">
+            <a href="#" target="_blank" class="hader-sc__link">
+              <svg width="22" height="18" class="hader-sc__icon">
+                <use href="images/svg-icons.svg#mail"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hader-sc__item">
+            <a href="#" target="_blank" class="hader-sc__link">
+              <svg width="22" height="18" class="hader-sc__icon">
+                <use href="images/svg-icons.svg#tg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="menu-btn header__menu-btn js-toggle-menu-btn">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main class="main">
+      <div class="section section_pt_40 section_pb_120 section-profile">
+        <div class="container">
+          <a href="#" class="link-back link-back_mb">
+            <svg width="16" height="16" class="link-back__icon">
+              <use href="images/svg-icons.svg#arrow-back"></use>
+            </svg>
+            back
+          </a>
+          <div class="profile">
+            <div class="profile__left">
+              <div class="photo-gallery product__photo-gallery">
+                <div class="photo-gallery-left-wrapper">
+                  <div class="swiper photo-gallery-left">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo2.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo3.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo1.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo4.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo1.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo2.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo4.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo1.png" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next swiper-custom-btn swiper-custom-btn_next photo-gallery-left-next">
+                    <svg width="12" height="7">
+                      <use href="images/svg-icons.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-prev swiper-custom-btn swiper-custom-btn_prev photo-gallery-left-prev">
+                    <svg width="12" height="7">
+                      <use href="images/svg-icons.svg#arrow-top"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="photo-gallery-right-wrapper">
+                  <div class="swiper photo-gallery-right">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo2.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo3.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo1.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo4.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo1.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo2.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo4.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo/photo1.png" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next swiper-custom-btn swiper-custom-btn_next photo-gallery-right-next">
+                    <svg width="7" height="12">
+                      <use href="images/svg-icons.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-prev swiper-custom-btn swiper-custom-btn_prev photo-gallery-right-prev">
+                    <svg width="7" height="12">
+                      <use href="images/svg-icons.svg#arrow-left"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile__right">
+              <div class="profile-content">
+                <div class="h1 profile__name">
+                  Jina
+                </div>
+                <div class="profile__text">
+                  If you looking for Phuket top escorts you are on the right page. We provide escort service in Phuket
+                  with sexy girls. Only top escorts in our escort agency. Read more
+                  <a href="#" class="link2">about us</a>
+                </div>
+                <div class="h3 profile__title2">
+                  About girl
+                </div>
+                <div class="profile-details profile__details">
+                  <div class="profile-details__row">
+                    <span class="profile-details__label">
+                      Name:
+                    </span>
+                    <span class="t-gold profile-details__value">
+                      Jina
+                    </span>
+                  </div>
+                  <div class="profile-details__row">
+                    <span class="profile-details__label">
+                      Gender:
+                    </span>
+                    <span class="t-gold profile-details__value">
+                      Female
+                    </span>
+                  </div>
+                  <div class="profile-details__row">
+                    <span class="profile-details__label">
+                      Age:
+                    </span>
+                    <span class="t-gold profile-details__value">
+                      35
+                    </span>
+                  </div>
+                  <div class="profile-details__row">
+                    <span class="profile-details__label">
+                      Height:
+                    </span>
+                    <span class="t-gold profile-details__value">
+                      168
+                    </span>
+                  </div>
+                  <div class="profile-details__row">
+                    <span class="profile-details__label">
+                      Weight:
+                    </span>
+                    <span class="t-gold profile-details__value">
+                      62
+                    </span>
+                  </div>
+                  <div class="profile-details__row">
+                    <span class="profile-details__label">
+                      Measurements:
+                    </span>
+                    <span class="t-gold profile-details__value">
+                      90-60-90
+                    </span>
+                  </div>
+                  <div class="profile-details__row">
+                    <span class="profile-details__label">
+                      Sup size:
+                    </span>
+                    <span class="t-gold profile-details__value">
+                      D
+                    </span>
+                  </div>
+                  <div class="profile-details__row">
+                    <span class="profile-details__label">
+                      Dick size size:
+                    </span>
+                    <span class="t-gold profile-details__value">
+                      D
+                    </span>
+                  </div>
+                  <div class="profile-details__row">
+                    <span class="profile-details__label">
+                      Pubic hair:
+                    </span>
+                    <span class="t-gold profile-details__value">
+                      Shaved
+                    </span>
+                  </div>
+                  <div class="profile-details__row">
+                    <span class="profile-details__label">
+                      Smoking:
+                    </span>
+                    <span class="t-gold profile-details__value">
+                      No
+                    </span>
+                  </div>
+                  <div class="profile-details__row">
+                    <span class="profile-details__label">
+                      Drinking:
+                    </span>
+                    <span class="t-gold profile-details__value">
+                      Yes
+                    </span>
+                  </div>
+                  <div class="profile-details__row">
+                    <span class="profile-details__label">
+                      Country:
+                    </span>
+                    <span class="t-gold profile-details__value">
+                      Tailand
+                    </span>
+                  </div>
+                  <div class="profile-details__row">
+                    <span class="profile-details__label">
+                      Language:
+                    </span>
+                    <span class="t-gold profile-details__value">
+                      Tai, Eng
+                    </span>
+                  </div>
+                </div>
+                <ul class="profile-sc profile__sc">
+                  <li class="profile-sc__item">
+                    <a href="#" target="_blank" class="profile-sc__link">
+                      <svg width="26" height="26" class="profile-sc__icon">
+                        <use href="images/svg-icons.svg#wa"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="profile-sc__item">
+                    <a href="#" target="_blank" class="profile-sc__link">
+                      <svg width="22" height="18" class="profile-sc__icon">
+                        <use href="images/svg-icons.svg#mail"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="profile-sc__item">
+                    <a href="#" target="_blank" class="profile-sc__link">
+                      <svg width="22" height="19" class="profile-sc__icon">
+                        <use href="images/svg-icons.svg#tg"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="profile-sc__item">
+                    <a href="#" target="_blank" class="profile-sc__link">
+                      <svg width="28" height="26" class="profile-sc__icon">
+                        <use href="images/svg-icons.svg#line"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section_dark section_pt_120 section_pb_150 section-prices">
+        <div class="container">
+          <div class="prices">
+            <h2 class="h1 section__title prices__title">
+              Price
+            </h2>
+            <div class="prices__text t-gold">
+              * TOP MODELS EXTRA 500-1000 TBH
+            </div>
+            <div class="border-s pricelist">
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  1 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  2 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  3 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  4 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  6 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  12 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+              <div class="pricelist__row">
+                <div class="pricelist__label">
+                  24 hour
+                </div>
+                <div class="pricelist__price">
+                  <span class="pricelist__old-price">
+                    3500 B
+                  </span>
+                  <span class="pricelist__new-price">
+                    3000B
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__info">
+        <div class="footer__logo">
+          <img src="images/logo.png" alt="">
+        </div>
+        <div class="footer__term">
+          © 2021 Top Phuket Escorts. All rights reserved.
+        </div>
+      </div>
+      <nav class="footer-cotacts footer__cotacts">
+        <ul class="footer-cotacts__list">
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              Phone
+            </div>
+            <a href="tel:+4547754754" class="footer-cotacts__link">
+              +4 547 754 754
+            </a>
+          </li>
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              Email
+            </div>
+            <a href="mailto:Tophuket@mail.com" class="footer-cotacts__link">
+              Tophuket@mail.com
+            </a>
+          </li>
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              WhatsApp
+            </div>
+            <a href="#" class="footer-cotacts__link">
+              @Tophuket
+            </a>
+          </li>
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              Telegram
+            </div>
+            <a href="#" class="footer-cotacts__link">
+              @Tophuket
+            </a>
+          </li>
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              Line
+            </div>
+            <a href="#" class="footer-cotacts__link">
+              LineLink
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="modal modal-sign" id="modal-preorder">
+  <div class="modal__outer js-modal-hide">
+    <div class="modal__inner modal-preorder__inner">
+      <div class="modal__close js-modal-hide"></div>
+      <div class="modal__title">
+        Pre-order
+      </div>
+      <div class="modal__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </div>
+      <div class="modal__switch">
+        <div class="switch section__title-switch">
+          <input type="checkbox" autocomplete="off" name="switch-lb" id="switch-lb" class="switch-lb switch__input">
+          <div class="switch__label">
+            girls
+          </div>
+          <label class="switch__btn" for="switch-lb"></label>
+          <div class="switch__label">
+            ladyboys
+          </div>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Girl
+        </div>
+        <div class="input-row__input">
+          <select class="select select_model js-select-model" autocomplete="off">
+            <option value="0" data-avatar="images/avatar.png" selected>Jina</option>
+            <option value="1" data-avatar="images/photo/photo2.png">Jina2</option>
+            <option value="2" data-avatar="images/photo/photo3.png">Jina3</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Date
+        </div>
+        <div class="input-date">
+          <div class="input-row__input input-date__date">
+            <input type="text" class="input-style js-preorder-date" placeholder="__ . __ . ____">
+          </div>
+          <div class="input-row__input input-date__time js-preorder-time">
+            <select class="select js-select-init" autocomplete="off">
+              <option value="0" selected>12:00</option>
+              <option value="1">12:30</option>
+              <option value="2">13:00</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Phone number
+        </div>
+        <div class="input-row__input">
+          <input type="text" class="input-style" placeholder="Phone number">
+        </div>
+      </div>
+      <div class="inputs-address modal__row">
+        <div class="input-row inputs-address__address">
+          <div class="input-row__lable">
+            Adress
+          </div>
+          <div class="input-row__input">
+            <input type="text" class="input-style" placeholder="Adress">
+          </div>
+        </div>
+        <div class="input-row inputs-address__room">
+          <div class="input-row__lable">
+            Room
+          </div>
+          <div class="input-row__input">
+            <input type="text" class="input-style" placeholder="№">
+          </div>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Message
+        </div>
+        <div class="input-row__input">
+          <textarea class="input-style input-style_textarea" name="" id="" placeholder="Message"></textarea>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Method of sending
+        </div>
+        <div class="input-row__input">
+          <select class="select js-select-init" autocomplete="off">
+            <option value="0" selected>Email1</option>
+            <option value="1">Email2</option>
+            <option value="2">Email3</option>
+            <option value="3">Email4</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal__btns">
+        <button class="btn btn_w_100p">
+          Send
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="js/flatpickr.js"></script>
+  <script src="js/tom-select.complete.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

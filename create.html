@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark only">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/flatpickr.min.css">
+  <link rel="stylesheet" href="css/tom-select.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__left">
+        <div class="header-menu">
+          <div class="header-menu__container">
+            <nav class="header-nav">
+              <ul class="header-nav__list">
+                <li class="header-nav__item">
+                  <a href="#" class="header-nav__link">
+                    Gallery
+                  </a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#" class="header-nav__link">
+                    Price
+                  </a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#" class="header-nav__link">
+                    Contact
+                  </a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#modal-preorder" data-modal="" class="header-nav__link _active">
+                    Pre-order
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="hader-sc header-menu__sc">
+              <li class="hader-sc__item">
+                <a href="#" target="_blank" class="hader-sc__link">
+                  <svg width="18" height="18" class="hader-sc__icon">
+                    <use href="images/svg-icons.svg#phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hader-sc__item">
+                <a href="#" target="_blank" class="hader-sc__link">
+                  <svg width="18" height="18" class="hader-sc__icon">
+                    <use href="images/svg-icons.svg#wa"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hader-sc__item">
+                <a href="#" target="_blank" class="hader-sc__link">
+                  <svg width="22" height="18" class="hader-sc__icon">
+                    <use href="images/svg-icons.svg#mail"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hader-sc__item">
+                <a href="#" target="_blank" class="hader-sc__link">
+                  <svg width="22" height="18" class="hader-sc__icon">
+                    <use href="images/svg-icons.svg#tg"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="header__logo">
+        <img src="images/logo.png" alt="">
+      </a>
+      <div class="header__right">
+        <div class="header__location">
+          <div class="header-drop">
+            <div class="header-drop__btn">
+              <img src="images/pin.svg" alt="" class="header-drop__icon">
+              <div class="header-drop__value">
+                Phuket
+              </div>
+            </div>
+            <ul class="header-drop__drop">
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Phuket
+                </a>
+              </li>
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Phuket
+                </a>
+              </li>
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Phuket
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__language">
+          <div class="header-drop">
+            <div class="header-drop__btn">
+              <img src="images/glob.svg" alt="" class="header-drop__icon">
+              <div class="header-drop__value">
+                Eng
+              </div>
+            </div>
+            <ul class="header-drop__drop">
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Eng
+                </a>
+              </li>
+              <li class="header-drop__item">
+                <a class="header-drop__link" href="#">
+                  Eng
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="hader-sc header__sc">
+          <li class="hader-sc__item">
+            <a href="#" target="_blank" class="hader-sc__link">
+              <svg width="18" height="18" class="hader-sc__icon">
+                <use href="images/svg-icons.svg#phone"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hader-sc__item">
+            <a href="#" target="_blank" class="hader-sc__link">
+              <svg width="18" height="18" class="hader-sc__icon">
+                <use href="images/svg-icons.svg#wa"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hader-sc__item">
+            <a href="#" target="_blank" class="hader-sc__link">
+              <svg width="22" height="18" class="hader-sc__icon">
+                <use href="images/svg-icons.svg#mail"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hader-sc__item">
+            <a href="#" target="_blank" class="hader-sc__link">
+              <svg width="22" height="18" class="hader-sc__icon">
+                <use href="images/svg-icons.svg#tg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="menu-btn header__menu-btn js-toggle-menu-btn">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main class="main">
+      <div class="section section_pt_60 section_pb_110 section-grid">
+        <div class="container">
+          <div class="section-grid__inner">
+            <div class="section-grid__sidebar">
+              <div class="sidebar">
+                <ul class="sidebar__list">
+                  <li class="sidebar__item">
+                    <a href="#" class="sidebar__link _active">
+                      <span class="sidebar__icon-box">
+                        <svg width="22" height="22" class="sidebar__icon">
+                          <use href="images/svg-icons.svg#create"></use>
+                        </svg>
+                      </span>
+                      Create profile
+                    </a>
+                  </li>
+                  <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                      <span class="sidebar__icon-box">
+                        <svg width="21" height="21" class="sidebar__icon">
+                          <use href="images/svg-icons.svg#gallery"></use>
+                        </svg>
+                      </span>
+                      Gallery
+                    </a>
+                  </li>
+                  <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                      <span class="sidebar__icon-box">
+                        <svg width="22" height="16" class="sidebar__icon">
+                          <use href="images/svg-icons.svg#contact"></use>
+                        </svg>
+                      </span>
+                      Contact
+                    </a>
+                  </li>
+                  <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                      <span class="sidebar__icon-box">
+                        <svg width="22" height="20" class="sidebar__icon">
+                          <use href="images/svg-icons.svg#message"></use>
+                        </svg>
+                      </span>
+                      Message and time
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="section-grid__content">
+              <div class="h2 section__title section-grid__title section__title_switch">
+                Create profile
+                <div class="switch section__title-switch">
+                  <input type="checkbox" autocomplete="off" name="switch-lb" id="switch-lb"
+                    class="switch-lb switch__input">
+                  <div class="switch__label">
+                    girls
+                  </div>
+                  <label class="switch__btn" for="switch-lb"></label>
+                  <div class="switch__label">
+                    ladyboys
+                  </div>
+                </div>
+              </div>
+              <div class="form-box">
+                <div class="form-box__top">
+                  <div class="photos form-box__photos form-item js-photos">
+                    <div class="card-photo _avatar js-card-photo">
+                      <div class="card-photo__content">
+                        <img src="images/photo/photo.png" alt="" class="card-photo__img">
+                        <div class="drop-menu card-photo__menu">
+                          <div class="drop-menu__btn js-drop-menu-show">
+                            <span></span><span></span><span></span>
+                          </div>
+                          <ul class="drop-menu__drop">
+                            <li>
+                              <div class="drop-menu__drop-btn js-make-avatar">
+                                Make avatar
+                              </div>
+                            </li>
+                            <li>
+                              <div class="drop-menu__drop-btn js-remove-photo">
+                                Delete
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-photo js-card-photo">
+                      <div class="card-photo__content">
+                        <img src="images/photo/photo.png" alt="" class="card-photo__img">
+                        <div class="drop-menu card-photo__menu">
+                          <div class="drop-menu__btn js-drop-menu-show">
+                            <span></span><span></span><span></span>
+                          </div>
+                          <ul class="drop-menu__drop">
+                            <li>
+                              <div class="drop-menu__drop-btn js-make-avatar">
+                                Make avatar
+                              </div>
+                            </li>
+                            <li>
+                              <div class="drop-menu__drop-btn js-remove-photo">
+                                Delete
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <label class="card-photo card-photo_add js-add-photo-parent js-drag-drop-img">
+                      <div class="card-photo__content">
+                        <input type="file" accept="image/*" name="add-photo" id="add-photo"
+                          class="card-photo__input js-add-photo">
+                        <div class="card-photo__add">
+                          <svg width="22" height="22" class="card-photo__add-icon">
+                            <use href="images/svg-icons.svg#add"></use>
+                          </svg>
+                          <div class="card-photo__add-text">
+                            ADD PHOTO
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                    <div class="card-photo _hidden js-card-photo">
+                      <div class="card-photo__content">
+                        <img src="" alt="" class="card-photo__img">
+                        <div class="drop-menu card-photo__menu">
+                          <div class="drop-menu__btn js-drop-menu-show">
+                            <span></span><span></span><span></span>
+                          </div>
+                          <ul class="drop-menu__drop">
+                            <li>
+                              <div class="drop-menu__drop-btn js-make-avatar">
+                                Make avatar
+                              </div>
+                            </li>
+                            <li>
+                              <div class="drop-menu__drop-btn js-remove-photo">
+                                Delete
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-row form-item">
+                    <div class="input-row__lable">
+                      Name
+                    </div>
+                    <div class="input-row__input">
+                      <input type="text" class="input-style" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="input-row form-item">
+                    <div class="input-row__lable">
+                      About girl
+                    </div>
+                    <div class="input-row__input">
+                      <textarea class="input-style input-style_textarea input-style_about" name="" id=""
+                        placeholder="About girl"></textarea>
+                    </div>
+                  </div>
+                  <div class="grid2column form-item">
+                    <div class="input-row">
+                      <div class="input-row__lable">
+                        Country
+                      </div>
+                      <div class="input-row__input">
+                        <select class="select js-select-init" autocomplete="off">
+                          <option value="0" selected>Country1</option>
+                          <option value="1">Country2</option>
+                          <option value="2">Country3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-row__lable">
+                        Language
+                      </div>
+                      <div class="input-row__input">
+                        <select class="select js-select-init-multiple" multiple placeholder="Language"
+                          autocomplete="off">
+                          <option value="0" selected>Tai</option>
+                          <option value="1">Eng</option>
+                          <option value="2">Eng 2</option>
+                          <option value="3">Eng 3</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid3columnGap form-item">
+                    <div class="input-row">
+                      <div class="input-row__lable">
+                        Gender
+                      </div>
+                      <div class="input-row__input">
+                        <select class="select js-select-init" autocomplete="off">
+                          <option value="0" selected>Female</option>
+                          <option value="1">Female2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-row__lable">
+                        Age
+                      </div>
+                      <div class="input-row__input">
+                        <select class="select js-select-init" autocomplete="off">
+                          <option value="0" selected>35</option>
+                          <option value="1">36</option>
+                          <option value="2">37</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-row__lable">
+                        Measurements
+                      </div>
+                      <div class="input-row__input">
+                        <input type="text" class="input-style" placeholder="__ - __ - __">
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-row__lable">
+                        Weight
+                      </div>
+                      <div class="input-row__input">
+                        <select class="select js-select-init" autocomplete="off">
+                          <option value="0" selected>62</option>
+                          <option value="1">63</option>
+                          <option value="2">64</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-row__lable">
+                        Height
+                      </div>
+                      <div class="input-row__input">
+                        <select class="select js-select-init" autocomplete="off">
+                          <option value="0" selected>168</option>
+                          <option value="1">169</option>
+                          <option value="2">170</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-row__lable">
+                        Sup size
+                      </div>
+                      <div class="input-row__input">
+                        <select class="select js-select-init" autocomplete="off">
+                          <option value="0" selected>D</option>
+                          <option value="1">B</option>
+                          <option value="2">C</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-row__lable">
+                        Pubic hair
+                      </div>
+                      <div class="input-row__input">
+                        <select class="select js-select-init" autocomplete="off">
+                          <option value="0" selected>Shaved</option>
+                          <option value="1">Shaved2</option>
+                          <option value="2">Shaved3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-row__lable">
+                        Smoking
+                      </div>
+                      <div class="input-row__input">
+                        <select class="select js-select-init" autocomplete="off">
+                          <option value="0" selected>No</option>
+                          <option value="1">Yes</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-row">
+                      <div class="input-row__lable">
+                        Drinking
+                      </div>
+                      <div class="input-row__input">
+                        <select class="select js-select-init" autocomplete="off">
+                          <option value="0" selected>No</option>
+                          <option value="1">Yes</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-box__bottom">
+                  <div class="form-box__btns">
+                    <button class="btn">
+                      Publish
+                    </button>
+                    <button class="btn btn_outline">
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__info">
+        <div class="footer__logo">
+          <img src="images/logo.png" alt="">
+        </div>
+        <div class="footer__term">
+          © 2021 Top Phuket Escorts. All rights reserved.
+        </div>
+      </div>
+      <nav class="footer-cotacts footer__cotacts">
+        <ul class="footer-cotacts__list">
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              Phone
+            </div>
+            <a href="tel:+4547754754" class="footer-cotacts__link">
+              +4 547 754 754
+            </a>
+          </li>
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              Email
+            </div>
+            <a href="mailto:Tophuket@mail.com" class="footer-cotacts__link">
+              Tophuket@mail.com
+            </a>
+          </li>
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              WhatsApp
+            </div>
+            <a href="#" class="footer-cotacts__link">
+              @Tophuket
+            </a>
+          </li>
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              Telegram
+            </div>
+            <a href="#" class="footer-cotacts__link">
+              @Tophuket
+            </a>
+          </li>
+          <li class="footer-cotacts__item">
+            <div class="footer-cotacts__title">
+              Line
+            </div>
+            <a href="#" class="footer-cotacts__link">
+              LineLink
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="modal modal-sign" id="modal-preorder">
+  <div class="modal__outer js-modal-hide">
+    <div class="modal__inner modal-preorder__inner">
+      <div class="modal__close js-modal-hide"></div>
+      <div class="modal__title">
+        Pre-order
+      </div>
+      <div class="modal__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      </div>
+      <div class="modal__switch">
+        <div class="switch section__title-switch">
+          <input type="checkbox" autocomplete="off" name="switch-lb" id="switch-lb" class="switch-lb switch__input">
+          <div class="switch__label">
+            girls
+          </div>
+          <label class="switch__btn" for="switch-lb"></label>
+          <div class="switch__label">
+            ladyboys
+          </div>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Girl
+        </div>
+        <div class="input-row__input">
+          <select class="select select_model js-select-model" autocomplete="off">
+            <option value="0" data-avatar="images/avatar.png" selected>Jina</option>
+            <option value="1" data-avatar="images/photo/photo2.png">Jina2</option>
+            <option value="2" data-avatar="images/photo/photo3.png">Jina3</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Date
+        </div>
+        <div class="input-date">
+          <div class="input-row__input input-date__date">
+            <input type="text" class="input-style js-preorder-date" placeholder="__ . __ . ____">
+          </div>
+          <div class="input-row__input input-date__time js-preorder-time">
+            <select class="select js-select-init" autocomplete="off">
+              <option value="0" selected>12:00</option>
+              <option value="1">12:30</option>
+              <option value="2">13:00</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Phone number
+        </div>
+        <div class="input-row__input">
+          <input type="text" class="input-style" placeholder="Phone number">
+        </div>
+      </div>
+      <div class="inputs-address modal__row">
+        <div class="input-row inputs-address__address">
+          <div class="input-row__lable">
+            Adress
+          </div>
+          <div class="input-row__input">
+            <input type="text" class="input-style" placeholder="Adress">
+          </div>
+        </div>
+        <div class="input-row inputs-address__room">
+          <div class="input-row__lable">
+            Room
+          </div>
+          <div class="input-row__input">
+            <input type="text" class="input-style" placeholder="№">
+          </div>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Message
+        </div>
+        <div class="input-row__input">
+          <textarea class="input-style input-style_textarea" name="" id="" placeholder="Message"></textarea>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Method of sending
+        </div>
+        <div class="input-row__input">
+          <select class="select js-select-init" autocomplete="off">
+            <option value="0" selected>Email1</option>
+            <option value="1">Email2</option>
+            <option value="2">Email3</option>
+            <option value="3">Email4</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal__btns">
+        <button class="btn btn_w_100p">
+          Send
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="js/flatpickr.js"></script>
+  <script src="js/tom-select.complete.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
