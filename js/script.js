@@ -1,6 +1,10 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
 
+  //+preloader
+  document.body.classList.remove('_preloader');
+  //-preloader
+
   //+save location,language (modal)
   let btnSavePreferences = document.querySelector('.js-save-user-preferences')
   if (btnSavePreferences) {
