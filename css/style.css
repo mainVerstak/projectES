@@ -39,7 +39,7 @@
   --gradient: linear-gradient(90deg, #fff 0%, #dadada 18.4%, #fff 46.4%, #ccc 66.4%, #b8b8b8 76.9%, #a2a2a2 100%);
 }
 
-:root ._lb-hide {
+:root._lb ._lb-hide {
   display: none !important;
 }
 
@@ -1644,6 +1644,10 @@ body._modal-open {
   margin-top: 20px;
 }
 
+.modal-preferences__inner .modal__title {
+  margin-bottom: 20px;
+}
+
 .sidebar {
   width: 100%;
   background: var(--box-bg);
@@ -2963,7 +2967,7 @@ body._modal-open {
   }
 
   .footer-cotacts__list {
-    gap: 25px 25px;
+    gap: 25px 20px;
   }
 
   .sidebar__link {
@@ -3255,10 +3259,6 @@ body._modal-open {
     display: none;
   }
 
-  .footer-cotacts__list {
-    gap: 25px 20px;
-  }
-
   .modal__inner {
     position: relativ;
     max-width: 481px;
@@ -3273,6 +3273,10 @@ body._modal-open {
   .modal__text {
     font-size: 14px;
     margin-bottom: 11px;
+  }
+
+  .modal-preferences__inner .modal__title {
+    margin-bottom: 15px;
   }
 
   .about-us__right {

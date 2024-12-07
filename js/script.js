@@ -1,6 +1,67 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
 
+  //+save location,language (modal)
+  let btnSavePreferences = document.querySelector('.js-save-user-preferences')
+  if (btnSavePreferences) {
+    let selectLocation = document.querySelector('.js-user-location');
+    let selectLanguage = document.querySelector('.js-user-language');
+    btnSavePreferences.addEventListener('click', function () {
+      let location = selectLocation.tomselect.getValue();
+      let language = selectLanguage.tomselect.getValue();
+      document.querySelector('.js-header-current-location').textContent = location;
+      document.querySelector('.js-header-current-language').textContent = language;
+      //set cookie
+      setCookie("cookie_location", location, 365);
+      setCookie("cookie_language", language, 365);
+    })
+  }
+  //-save location,language (modal)
+
+  //+cookie
+  //get cookie
+  function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  //set cookie
+  function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + "; SameSite=None; Secure; path=/";
+  }
+  //check and update cookie
+  (function checkCookie() {
+    let cookieLanguag = getCookie("cookie_language");
+    let cookieLocation = getCookie("cookie_location");
+    if (cookieLanguag == "") {
+      document.querySelectorAll('.modal-preference').forEach(function (popup) {
+        popup.classList.add('_active')
+      });
+    } else {
+      setCookie("cookie_language", cookieLanguag, 365);
+    }
+    if (cookieLocation == "") {
+      document.querySelectorAll('.modal-preference').forEach(function (popup) {
+        popup.classList.add('_active')
+      });
+    } else {
+      setCookie("cookie_location", cookieLocation, 365);
+    }
+  })();
+  //-cookie
+
   //+date picker
   flatpickr(".js-preorder-date", {
     dateFormat: "d.m.Y",

@@ -86,7 +86,7 @@
           <div class="header-drop">
             <div class="header-drop__btn">
               <img src="images/pin.svg" alt="" class="header-drop__icon">
-              <div class="header-drop__value">
+              <div class="header-drop__value js-header-current-location">
                 Phuket
               </div>
             </div>
@@ -98,12 +98,12 @@
               </li>
               <li class="header-drop__item">
                 <a class="header-drop__link" href="#">
-                  Phuket
+                  Phuket1
                 </a>
               </li>
               <li class="header-drop__item">
                 <a class="header-drop__link" href="#">
-                  Phuket
+                  Phuket2
                 </a>
               </li>
             </ul>
@@ -113,7 +113,7 @@
           <div class="header-drop">
             <div class="header-drop__btn">
               <img src="images/glob.svg" alt="" class="header-drop__icon">
-              <div class="header-drop__value">
+              <div class="header-drop__value js-header-current-language">
                 Eng
               </div>
             </div>
@@ -125,7 +125,7 @@
               </li>
               <li class="header-drop__item">
                 <a class="header-drop__link" href="#">
-                  Eng
+                  Eng2
                 </a>
               </li>
             </ul>
@@ -318,14 +318,6 @@
               @Tophuket
             </a>
           </li>
-          <li class="footer-cotacts__item">
-            <div class="footer-cotacts__title">
-              Line
-            </div>
-            <a href="#" class="footer-cotacts__link">
-              LineLink
-            </a>
-          </li>
         </ul>
       </nav>
     </div>
@@ -333,7 +325,7 @@
 </div>
   </div>
 
-  <div class="modal modal-sign" id="modal-preorder">
+  <div class="modal modal-preorder" id="modal-preorder">
   <div class="modal__outer js-modal-hide">
     <div class="modal__inner modal-preorder__inner">
       <div class="modal__close js-modal-hide"></div>
@@ -434,6 +426,45 @@
       <div class="modal__btns">
         <button class="btn btn_w_100p">
           Send
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-preference" id="modal-preferences">
+  <div class="modal__outer js-modal-hide">
+    <div class="modal__inner modal-preferences__inner">
+      <div class="modal__close js-modal-hide"></div>
+      <div class="modal__title">
+        Select your location and language
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Location
+        </div>
+        <div class="input-row__input">
+          <select class="select js-select-init js-user-location" autocomplete="off">
+            <option value="Phuket" selected>Phuket</option>
+            <option value="Phuket1">Phuket1</option>
+            <option value="Phuket2">Phuket2</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-row modal__row">
+        <div class="input-row__lable">
+          Language
+        </div>
+        <div class="input-row__input">
+          <select class="select js-select-init js-user-language" autocomplete="off">
+            <option value="Eng" selected>Eng</option>
+            <option value="Eng1">Eng1</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal__btns">
+        <button class="btn btn_w_100p js-save-user-preferences js-modal-hide">
+          Save
         </button>
       </div>
     </div>
