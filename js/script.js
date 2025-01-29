@@ -290,6 +290,27 @@ document.addEventListener("DOMContentLoaded", function () {
       992: {
         direction: 'vertical',
       }
+    },
+    on: {
+      init: function (swiper) {
+        if (window.innerWidth < 992) {
+          if (document.body.classList.contains('rtl')) {
+            swiper.changeLanguageDirection('rtl')
+          }
+        } else {
+          swiper.changeLanguageDirection('ltr')
+        }
+      },
+      resize: function (swiper) {
+        if (window.innerWidth < 992) {
+          if (document.body.classList.contains('rtl')) {
+            swiper.changeLanguageDirection('ltr')
+            swiper.changeLanguageDirection('rtl')
+          }
+        } else {
+          swiper.changeLanguageDirection('ltr');
+        }
+      },
     }
   });
   var SwiperGalleryRight = new Swiper(".photo-gallery-right", {
